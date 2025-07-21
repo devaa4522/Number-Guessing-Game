@@ -23,7 +23,10 @@ int difficulty(){
 }
 
 int get_random(){
-    return rand() % 100 + 1;
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    static std::uniform_int_distribution<int> dist(1, 100);
+    return dist(gen);
 }
 
 void play(){
