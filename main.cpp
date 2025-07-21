@@ -1,7 +1,7 @@
 #include<iostream>
 #include <cstdlib>
 #include <ctime>
-// #include<random>
+#include<random>
 
 int difficulty(){
         while(true){
